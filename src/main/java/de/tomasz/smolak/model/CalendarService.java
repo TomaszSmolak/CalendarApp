@@ -105,13 +105,15 @@ public class CalendarService {
 
     /**
      * Berechnet die Differenz zwischen zwei Datumswerten in Jahren, Monaten und Tagen.
-     *
+     * <p>
      * Die Methode verwendet java.util.Calendar zur Bestimmung der Jahres-, Monats- und Tagesdifferenz.
      * Zusätzlich wird die Gesamtanzahl der Tage über die Zeitdifferenz in Millisekunden berechnet.
      *
      * @param d1 Erstes Datum im Format dd.MM.yyyy
      * @param d2 Zweites Datum im Format dd.MM.yyyy
      * @return Ein formatierter Text mit der Datumsdifferenz oder eine Fehlermeldung bei ungültigem Eingabeformat
+     * @author Tomasz Smolak
+     * @since 1.0
      */
     public String calculateDateDifference(String d1, String d2) {
         try {
